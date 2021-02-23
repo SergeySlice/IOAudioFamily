@@ -24,6 +24,7 @@
 #define _IOKIT_IOAUDIOCONTROL_H
 
 #include <IOKit/IOService.h>
+//#include "IOService.h"
 #include <AvailabilityMacros.h>
 #ifndef IOAUDIOFAMILY_SELF_BUILD
 #include <IOKit/audio/IOAudioEngine.h>
@@ -224,7 +225,31 @@ private:
     OSMetaClassDeclareReservedUnused(IOAudioControl, 21);
     OSMetaClassDeclareReservedUnused(IOAudioControl, 22);
     OSMetaClassDeclareReservedUnused(IOAudioControl, 23);
-    
+  OSMetaClassDeclareReservedUnused(IOAudioControl, 24);
+  OSMetaClassDeclareReservedUnused(IOAudioControl, 25);
+  OSMetaClassDeclareReservedUnused(IOAudioControl, 26);
+  OSMetaClassDeclareReservedUnused(IOAudioControl, 27);
+  OSMetaClassDeclareReservedUnused(IOAudioControl, 28);
+  OSMetaClassDeclareReservedUnused(IOAudioControl, 29);
+  OSMetaClassDeclareReservedUnused(IOAudioControl, 30);
+  OSMetaClassDeclareReservedUnused(IOAudioControl, 31);
+  OSMetaClassDeclareReservedUnused(IOAudioControl, 32);
+  OSMetaClassDeclareReservedUnused(IOAudioControl, 33);
+  OSMetaClassDeclareReservedUnused(IOAudioControl, 34);
+  OSMetaClassDeclareReservedUnused(IOAudioControl, 35);
+  OSMetaClassDeclareReservedUnused(IOAudioControl, 36);
+  OSMetaClassDeclareReservedUnused(IOAudioControl, 37);
+  OSMetaClassDeclareReservedUnused(IOAudioControl, 38);
+  OSMetaClassDeclareReservedUnused(IOAudioControl, 39);
+  OSMetaClassDeclareReservedUnused(IOAudioControl, 40);
+  OSMetaClassDeclareReservedUnused(IOAudioControl, 41);
+  OSMetaClassDeclareReservedUnused(IOAudioControl, 42);
+  OSMetaClassDeclareReservedUnused(IOAudioControl, 43);
+  OSMetaClassDeclareReservedUnused(IOAudioControl, 44);
+  OSMetaClassDeclareReservedUnused(IOAudioControl, 45);
+  OSMetaClassDeclareReservedUnused(IOAudioControl, 46);
+  OSMetaClassDeclareReservedUnused(IOAudioControl, 47);
+
 public:
 
     /*!

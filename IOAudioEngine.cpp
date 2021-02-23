@@ -20,7 +20,7 @@
  * @APPLE_LICENSE_HEADER_END@
  */
 
-#include <emmintrin.h>
+#include "emmintrin.h"
 #include "IOAudioDebug.h"
 #include "IOAudioEngine.h"
 #include "IOAudioEngineUserClient.h"

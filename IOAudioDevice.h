@@ -28,6 +28,7 @@
 #define _IOKIT_IOAUDIODEVICE_H
 
 #include <IOKit/IOService.h>
+//#include "IOService.h"
 #include <AvailabilityMacros.h>
 
 #ifndef IOAUDIOFAMILY_SELF_BUILD
@@ -281,7 +282,23 @@ private:
 	OSMetaClassDeclareReservedUnused(IOAudioDevice, 29);
 	OSMetaClassDeclareReservedUnused(IOAudioDevice, 30);
 	OSMetaClassDeclareReservedUnused(IOAudioDevice, 31);
-	
+  OSMetaClassDeclareReservedUnused(IOAudioDevice, 32);
+  OSMetaClassDeclareReservedUnused(IOAudioDevice, 33);
+  OSMetaClassDeclareReservedUnused(IOAudioDevice, 34);
+  OSMetaClassDeclareReservedUnused(IOAudioDevice, 35);
+  OSMetaClassDeclareReservedUnused(IOAudioDevice, 36);
+  OSMetaClassDeclareReservedUnused(IOAudioDevice, 37);
+  OSMetaClassDeclareReservedUnused(IOAudioDevice, 38);
+  OSMetaClassDeclareReservedUnused(IOAudioDevice, 39);
+  OSMetaClassDeclareReservedUnused(IOAudioDevice, 40);
+  OSMetaClassDeclareReservedUnused(IOAudioDevice, 41);
+  OSMetaClassDeclareReservedUnused(IOAudioDevice, 42);
+  OSMetaClassDeclareReservedUnused(IOAudioDevice, 43);
+  OSMetaClassDeclareReservedUnused(IOAudioDevice, 44);
+  OSMetaClassDeclareReservedUnused(IOAudioDevice, 45);
+  OSMetaClassDeclareReservedUnused(IOAudioDevice, 46);
+  OSMetaClassDeclareReservedUnused(IOAudioDevice, 47);
+
 
 public:
     // Initialization

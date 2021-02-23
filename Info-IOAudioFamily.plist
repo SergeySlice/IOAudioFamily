@@ -6,28 +6,28 @@
 	<string>English</string>
 	<key>CFBundleExecutable</key>
 	<string>IOAudioFamily</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>${EXECUTABLE_NAME} ${AE_CONCISE_VERSION}, Copyright © 2000-${AE_COPYRIGHT_END} Apple Inc. All rights reserved.</string>
 	<key>CFBundleGetInfoString</key>
 	<string>${EXECUTABLE_NAME} ${AE_CONCISE_VERSION}, Copyright © 2000-${AE_COPYRIGHT_END} Apple Inc. All rights reserved.</string>
+	<key>CFBundleVersion</key>
+	<string>${AE_CONCISE_VERSION}</string>
+	<key>CFBundleShortVersionString</key>
+	<string>${AE_CONCISE_VERSION}</string>
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
-	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<string>com.apple.iokit.IOAudioFamily</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
 	<string>IOAudioFamily</string>
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
-	<key>CFBundleShortVersionString</key>
-	<string>${AE_CONCISE_VERSION}</string>
 	<key>CFBundleSignature</key>
 	<string>aaud</string>
-	<key>CFBundleVersion</key>
-	<string>${AE_CONCISE_VERSION}</string>
 	<key>IOKitPersonalities</key>
 	<dict/>
-	<key>NSHumanReadableCopyright</key>
-	<string>${EXECUTABLE_NAME} ${AE_CONCISE_VERSION}, Copyright © 2000-${AE_COPYRIGHT_END} Apple Inc. All rights reserved.</string>
 	<key>OSBundleCompatibleVersion</key>
 	<string>1.0</string>
 	<key>OSBundleLibraries</key>

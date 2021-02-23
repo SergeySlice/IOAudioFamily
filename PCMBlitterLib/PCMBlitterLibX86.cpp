@@ -1,68 +1,29 @@
-/*	Copyright: 	© Copyright 2005 Apple Computer, Inc. All rights reserved.
-
-	Disclaimer:	IMPORTANT:  This Apple software is supplied to you by Apple Computer, Inc.
-			("Apple") in consideration of your agreement to the following terms, and your
-			use, installation, modification or redistribution of this Apple software
-			constitutes acceptance of these terms.  If you do not agree with these terms,
-			please do not use, install, modify or redistribute this Apple software.
-
-			In consideration of your agreement to abide by the following terms, and subject
-			to these terms, Apple grants you a personal, non-exclusive license, under Apple’s
-			copyrights in this original Apple software (the "Apple Software"), to use,
-			reproduce, modify and redistribute the Apple Software, with or without
-			modifications, in source and/or binary forms; provided that if you redistribute
-			the Apple Software in its entirety and without modifications, you must retain
-			this notice and the following text and disclaimers in all such redistributions of
-			the Apple Software.  Neither the name, trademarks, service marks or logos of
-			Apple Computer, Inc. may be used to endorse or promote products derived from the
-			Apple Software without specific prior written permission from Apple.  Except as
-			expressly stated in this notice, no other rights or licenses, express or implied,
-			are granted by Apple herein, including but not limited to any patent rights that
-			may be infringed by your derivative works or by other works in which the Apple
-			Software may be incorporated.
-
-			The Apple Software is provided by Apple on an "AS IS" basis.  APPLE MAKES NO
-			WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION THE IMPLIED
-			WARRANTIES OF NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR
-			PURPOSE, REGARDING THE APPLE SOFTWARE OR ITS USE AND OPERATION ALONE OR IN
-			COMBINATION WITH YOUR PRODUCTS.
-
-			IN NO EVENT SHALL APPLE BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL OR
-			CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
-			GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
-			ARISING IN ANY WAY OUT OF THE USE, REPRODUCTION, MODIFICATION AND/OR DISTRIBUTION
-			OF THE APPLE SOFTWARE, HOWEVER CAUSED AND WHETHER UNDER THEORY OF CONTRACT, TORT
-			(INCLUDING NEGLIGENCE), STRICT LIABILITY OR OTHERWISE, EVEN IF APPLE HAS BEEN
-			ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-*/
-/*=============================================================================
-	PCMBlitterLibX86.c
-	
-=============================================================================*/
-
+#include "License.h"
+#ifndef TIGER
 #include <TargetConditionals.h>
+#endif
 
 #define _MM_MALLOC_H_INCLUDED 1	// we don't want this header
-#include <xmmintrin.h>
-#include "IOAudioBlitterLib.h"
+#include "private_xmmintrin.h"
+#include "PCMBlitterLib.h"
 #include <libkern/OSByteOrder.h>
 
 #define kMaxFloat32 2147483520.0f
 	// this is the biggest floating point number that result from a 32-bit int (bits are lost)
 	// it's 2^31 - 128
 
-static inline __m128i  byteswap16( __m128i v )
+static inline __m128i  byteswap16(__m128i v)
 {
 	//rotate each 16 bit quantity by 8 bits
-	return _mm_or_si128( _mm_slli_epi16( v, 8 ), _mm_srli_epi16( v, 8 ) );
+	return _mm_or_si128(_mm_slli_epi16(v, 8), _mm_srli_epi16(v, 8));
 }
 
-static inline __m128i  byteswap32( __m128i v )
+static inline __m128i  byteswap32(__m128i v)
 {
 	//rotate each 32 bit quantity by 16 bits
 	// 0xB1 = 10110001 = 2,3,0,1
-	v = _mm_shufflehi_epi16( _mm_shufflelo_epi16( v, 0xB1 ), 0xB1 );
-	return byteswap16( v );
+	v = _mm_shufflehi_epi16(_mm_shufflelo_epi16(v, 0xB1), 0xB1);
+	return byteswap16(v);
 }
 
 
@@ -70,7 +31,7 @@ static inline __m128i  byteswap32( __m128i v )
 #pragma mark -
 #pragma mark Float -> Int
 
-void Float32ToNativeInt16_X86( const Float32 *src, SInt16 *dst, unsigned int numToConvert )
+void Float32ToNativeInt16_X86(const Float32 *src, SInt16 *dst, unsigned int numToConvert)
 {
 	const float *src0 = src;
 	int16_t *dst0 = dst;
@@ -174,7 +135,7 @@ VectorCleanup:
 
 // ===================================================================================================
 
-void Float32ToSwapInt16_X86( const Float32 *src, SInt16 *dst, unsigned int numToConvert )
+void Float32ToSwapInt16_X86(const Float32 *src, SInt16 *dst, unsigned int numToConvert)
 {
 	const float *src0 = src;
 	int16_t *dst0 = dst;
@@ -271,12 +232,7 @@ VectorCleanup:
 			f0 = f0 * scale + round;
 			SInt32 i0 = FloatToInt(f0, min32, max32);
 			i0 >>= 16;
-#if __ppc__			
 			*dst++ = OSSwapInt16(i0);
-#else
-			*dst++ = i0;
-#endif
-
 		}
 		RESTORE_ROUNDMODE
 	}
@@ -284,7 +240,7 @@ VectorCleanup:
 
 // ===================================================================================================
 
-void Float32ToNativeInt32_X86( const Float32 *src, SInt32 *dst, unsigned int numToConvert )
+void Float32ToNativeInt32_X86(const Float32 *src, SInt32 *dst, unsigned int numToConvert)
 {
 	const float *src0 = src;
 	SInt32 *dst0 = dst;
@@ -376,7 +332,7 @@ VectorCleanup:
 
 // ===================================================================================================
 
-void Float32ToSwapInt32_X86( const Float32 *src, SInt32 *dst, unsigned int numToConvert )
+void Float32ToSwapInt32_X86(const Float32 *src, SInt32 *dst, unsigned int numToConvert)
 {
 	const float *src0 = src;
 	SInt32 *dst0 = dst;
@@ -461,12 +417,7 @@ VectorCleanup:
 			double f0 = *src++;
 			f0 = f0 * scale + round;
 			SInt32 i0 = FloatToInt(f0, min32, max32);
-#if __ppc__			
 			*dst++ = OSSwapInt32(i0);
-#else
-			*dst++ =  i0;
-#endif
-
 		}
 		RESTORE_ROUNDMODE
 	}
@@ -496,7 +447,7 @@ static inline __m128i Pack32ToLE24(__m128i val, __m128i mask)
 }
 
 // marginally faster than scalar
-void Float32ToNativeInt24_X86( const Float32 *src, UInt8 *dst, unsigned int numToConvert )
+void Float32ToNativeInt24_X86(const Float32 *src, UInt8 *dst, unsigned int numToConvert)
 {
 	const Float32 *src0 = src;
 	UInt8 *dst0 = dst;
@@ -600,7 +551,7 @@ void Float32ToNativeInt24_X86( const Float32 *src, UInt8 *dst, unsigned int numT
 #pragma mark -
 #pragma mark Int -> Float
 
-void NativeInt16ToFloat32_X86( const SInt16 *src, Float32 *dst, unsigned int numToConvert )
+void NativeInt16ToFloat32_X86(const SInt16 *src, Float32 *dst, unsigned int numToConvert)
 {
 	const SInt16 *src0 = src;
 	Float32 *dst0 = dst;
@@ -690,7 +641,7 @@ VectorCleanup:
 
 // ===================================================================================================
 
-void SwapInt16ToFloat32_X86( const SInt16 *src, Float32 *dst, unsigned int numToConvert )
+void SwapInt16ToFloat32_X86(const SInt16 *src, Float32 *dst, unsigned int numToConvert)
 {
 	const SInt16 *src0 = src;
 	Float32 *dst0 = dst;
@@ -773,9 +724,7 @@ VectorCleanup:
 		double scale = 1./32768.f;
 		while (count-- > 0) {
 			SInt16 i = *src++;
-#if __ppc__
 			i = OSSwapInt16(i);
-#endif
 			double f = (double)i * scale;
 			*dst++ = f;
 		}
@@ -784,7 +733,7 @@ VectorCleanup:
 
 // ===================================================================================================
 
-void NativeInt32ToFloat32_X86( const SInt32 *src, Float32 *dst, unsigned int numToConvert )
+void NativeInt32ToFloat32_X86(const SInt32 *src, Float32 *dst, unsigned int numToConvert)
 {
 	const SInt32 *src0 = src;
 	Float32 *dst0 = dst;
@@ -864,7 +813,7 @@ VectorCleanup:
 
 // ===================================================================================================
 
-void SwapInt32ToFloat32_X86( const SInt32 *src, Float32 *dst, unsigned int numToConvert )
+void SwapInt32ToFloat32_X86(const SInt32 *src, Float32 *dst, unsigned int numToConvert)
 {
 	const SInt32 *src0 = src;
 	Float32 *dst0 = dst;
@@ -937,13 +886,9 @@ VectorCleanup:
 		double scale = 1./2147483648.0f;
 		while (count-- > 0) {
 			SInt32 i = *src++;
-#if __ppc__
 			i = OSSwapInt32(i);
-#endif
-
 			double f = (double)i * scale;
 			*dst++ = f;
 		}
 	}
 }
-

@@ -67,6 +67,31 @@ OSMetaClassDefineReservedUnused(IOAudioControl, 20);
 OSMetaClassDefineReservedUnused(IOAudioControl, 21);
 OSMetaClassDefineReservedUnused(IOAudioControl, 22);
 OSMetaClassDefineReservedUnused(IOAudioControl, 23);
+OSMetaClassDefineReservedUnused(IOAudioControl, 24);
+OSMetaClassDefineReservedUnused(IOAudioControl, 25);
+OSMetaClassDefineReservedUnused(IOAudioControl, 26);
+OSMetaClassDefineReservedUnused(IOAudioControl, 27);
+OSMetaClassDefineReservedUnused(IOAudioControl, 28);
+OSMetaClassDefineReservedUnused(IOAudioControl, 29);
+OSMetaClassDefineReservedUnused(IOAudioControl, 30);
+OSMetaClassDefineReservedUnused(IOAudioControl, 31);
+OSMetaClassDefineReservedUnused(IOAudioControl, 32);
+OSMetaClassDefineReservedUnused(IOAudioControl, 33);
+OSMetaClassDefineReservedUnused(IOAudioControl, 34);
+OSMetaClassDefineReservedUnused(IOAudioControl, 35);
+OSMetaClassDefineReservedUnused(IOAudioControl, 36);
+OSMetaClassDefineReservedUnused(IOAudioControl, 37);
+OSMetaClassDefineReservedUnused(IOAudioControl, 38);
+OSMetaClassDefineReservedUnused(IOAudioControl, 39);
+OSMetaClassDefineReservedUnused(IOAudioControl, 40);
+OSMetaClassDefineReservedUnused(IOAudioControl, 41);
+OSMetaClassDefineReservedUnused(IOAudioControl, 42);
+OSMetaClassDefineReservedUnused(IOAudioControl, 43);
+OSMetaClassDefineReservedUnused(IOAudioControl, 44);
+OSMetaClassDefineReservedUnused(IOAudioControl, 45);
+OSMetaClassDefineReservedUnused(IOAudioControl, 46);
+OSMetaClassDefineReservedUnused(IOAudioControl, 47);
+
 
 // New code
 

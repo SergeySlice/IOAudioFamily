@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		30958873126D4FC90024DE0C /* IOAudioBlitterLib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3095886D126D4FC90024DE0C /* IOAudioBlitterLib.cpp */; };
-		30958874126D4FC90024DE0C /* IOAudioBlitterLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 3095886E126D4FC90024DE0C /* IOAudioBlitterLib.h */; };
-		30958878126D4FC90024DE0C /* IOAudioBlitterLibX86.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30958872126D4FC90024DE0C /* IOAudioBlitterLibX86.cpp */; };
-		30D6E62E145A427B00DBD097 /* IOAudioBlitterLibDispatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30CE74C0126E5931006D705F /* IOAudioBlitterLibDispatch.cpp */; };
-		30DA50441451D10A006CF664 /* IOAudioBlitterLibDispatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 30DA50431451D10A006CF664 /* IOAudioBlitterLibDispatch.h */; };
-		8BAB7444145B2345000048A5 /* IOAudioBlitterLibDispatch.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 30DA50431451D10A006CF664 /* IOAudioBlitterLibDispatch.h */; };
 		8BC08A861561C9C200CA98A1 /* BigNum128.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BC08A821561C9C200CA98A1 /* BigNum128.cpp */; };
 		8BC08A871561C9C200CA98A1 /* BigNum128.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC08A831561C9C200CA98A1 /* BigNum128.h */; };
 		8BC08A881561C9C200CA98A1 /* IOAudioTimeIntervalFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BC08A841561C9C200CA98A1 /* IOAudioTimeIntervalFilter.cpp */; };
 		8BC08A891561C9C200CA98A1 /* IOAudioTimeIntervalFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC08A851561C9C200CA98A1 /* IOAudioTimeIntervalFilter.h */; };
 		8BC08A8C1561D4D500CA98A1 /* IOAudioTimeIntervalFilter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8BC08A851561C9C200CA98A1 /* IOAudioTimeIntervalFilter.h */; };
 		8BC08A911562C6F000CA98A1 /* BigNum128.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8BC08A831561C9C200CA98A1 /* BigNum128.h */; };
+		A570429425E55AE500A09773 /* PCMBlitterLibDispatch.h in Headers */ = {isa = PBXBuildFile; fileRef = A570428F25E55AE400A09773 /* PCMBlitterLibDispatch.h */; };
+		A570429525E55AE500A09773 /* PCMBlitterLibDispatch.h in Headers */ = {isa = PBXBuildFile; fileRef = A570428F25E55AE400A09773 /* PCMBlitterLibDispatch.h */; };
+		A570429625E55AE500A09773 /* PCMBlitterLibX86.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A570429025E55AE400A09773 /* PCMBlitterLibX86.cpp */; };
+		A570429725E55AE500A09773 /* PCMBlitterLibX86.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A570429025E55AE400A09773 /* PCMBlitterLibX86.cpp */; };
+		A570429825E55AE500A09773 /* PCMBlitterLib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A570429125E55AE500A09773 /* PCMBlitterLib.cpp */; };
+		A570429925E55AE500A09773 /* PCMBlitterLib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A570429125E55AE500A09773 /* PCMBlitterLib.cpp */; };
+		A570429A25E55AE500A09773 /* PCMBlitterLib.h in Headers */ = {isa = PBXBuildFile; fileRef = A570429225E55AE500A09773 /* PCMBlitterLib.h */; };
+		A570429B25E55AE500A09773 /* PCMBlitterLib.h in Headers */ = {isa = PBXBuildFile; fileRef = A570429225E55AE500A09773 /* PCMBlitterLib.h */; };
+		A570429C25E55AE500A09773 /* private_xmmintrin.h in Headers */ = {isa = PBXBuildFile; fileRef = A570429325E55AE500A09773 /* private_xmmintrin.h */; };
+		A570429D25E55AE500A09773 /* private_xmmintrin.h in Headers */ = {isa = PBXBuildFile; fileRef = A570429325E55AE500A09773 /* private_xmmintrin.h */; };
 		A5E9E0D32247540800C1AF35 /* OSBase2.h in Headers */ = {isa = PBXBuildFile; fileRef = A5E9E0D22247540800C1AF35 /* OSBase2.h */; };
 		D63C4CC90B20BFAE0047FE0F /* IOAudioControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 06F44E17FFE702AD11CA29EB /* IOAudioControl.h */; };
 		D63C4CCA0B20BFAE0047FE0F /* IOAudioControlUserClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 06F44E18FFE702AD11CA29EB /* IOAudioControlUserClient.h */; };
@@ -88,7 +92,6 @@
 			dstSubfolderSpec = 0;
 			files = (
 				8BC08A911562C6F000CA98A1 /* BigNum128.h in CopyFiles */,
-				8BAB7444145B2345000048A5 /* IOAudioBlitterLibDispatch.h in CopyFiles */,
 				D63C4CFF0B20BFAE0047FE0F /* IOAudioControl.h in CopyFiles */,
 				D63C4D000B20BFAE0047FE0F /* IOAudioControlUserClient.h in CopyFiles */,
 				D63C4D010B20BFAE0047FE0F /* IOAudioDevice.h in CopyFiles */,
@@ -140,24 +143,24 @@
 		06F44E20FFE702AD11CA29EB /* IOAudioPort.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = IOAudioPort.h; sourceTree = "<group>"; };
 		06F44E21FFE702AD11CA29EB /* IOAudioStream.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = IOAudioStream.h; sourceTree = "<group>"; };
 		06F44E22FFE702AD11CA29EB /* IOAudioTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = IOAudioTypes.h; sourceTree = "<group>"; };
-		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		15F1CA6BFFEC8F6A11CA29EB /* IOAudioDebug.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = IOAudioDebug.h; sourceTree = "<group>"; };
 		1B71235B00570F9911CA29EB /* IOAudioSelectorControl.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = IOAudioSelectorControl.cpp; sourceTree = "<group>"; };
 		1B71235C00570F9911CA29EB /* IOAudioToggleControl.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = IOAudioToggleControl.cpp; sourceTree = "<group>"; };
 		1B71235D00570F9911CA29EB /* IOAudioSelectorControl.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = IOAudioSelectorControl.h; sourceTree = "<group>"; };
 		1B71235E00570F9911CA29EB /* IOAudioToggleControl.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = IOAudioToggleControl.h; sourceTree = "<group>"; };
 		3052624D1829A1CA00882348 /* version.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = version.xcconfig; sourceTree = "<group>"; };
-		3095886D126D4FC90024DE0C /* IOAudioBlitterLib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IOAudioBlitterLib.cpp; path = PCMBlitterLib/IOAudioBlitterLib.cpp; sourceTree = "<group>"; };
-		3095886E126D4FC90024DE0C /* IOAudioBlitterLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IOAudioBlitterLib.h; path = PCMBlitterLib/IOAudioBlitterLib.h; sourceTree = "<group>"; };
-		30958872126D4FC90024DE0C /* IOAudioBlitterLibX86.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IOAudioBlitterLibX86.cpp; path = PCMBlitterLib/IOAudioBlitterLibX86.cpp; sourceTree = "<group>"; };
-		30CE74C0126E5931006D705F /* IOAudioBlitterLibDispatch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IOAudioBlitterLibDispatch.cpp; path = PCMBlitterLib/IOAudioBlitterLibDispatch.cpp; sourceTree = "<group>"; };
-		30DA50431451D10A006CF664 /* IOAudioBlitterLibDispatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IOAudioBlitterLibDispatch.h; path = PCMBlitterLib/IOAudioBlitterLibDispatch.h; sourceTree = "<group>"; };
 		4027DBBA010E55A905CA29EB /* IOAudioFamily-README.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "IOAudioFamily-README.rtf"; sourceTree = "<group>"; };
 		79985E100B3B532700C7B13B /* Info-IOAudioFamily.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "Info-IOAudioFamily.plist"; sourceTree = "<group>"; };
 		8BC08A821561C9C200CA98A1 /* BigNum128.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BigNum128.cpp; sourceTree = "<group>"; };
 		8BC08A831561C9C200CA98A1 /* BigNum128.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigNum128.h; sourceTree = "<group>"; };
 		8BC08A841561C9C200CA98A1 /* IOAudioTimeIntervalFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IOAudioTimeIntervalFilter.cpp; sourceTree = "<group>"; };
 		8BC08A851561C9C200CA98A1 /* IOAudioTimeIntervalFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOAudioTimeIntervalFilter.h; sourceTree = "<group>"; };
+		A537BA79247D67A800BA3079 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A570428F25E55AE400A09773 /* PCMBlitterLibDispatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PCMBlitterLibDispatch.h; path = PCMBlitterLib/PCMBlitterLibDispatch.h; sourceTree = "<group>"; };
+		A570429025E55AE400A09773 /* PCMBlitterLibX86.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PCMBlitterLibX86.cpp; path = PCMBlitterLib/PCMBlitterLibX86.cpp; sourceTree = "<group>"; };
+		A570429125E55AE500A09773 /* PCMBlitterLib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PCMBlitterLib.cpp; path = PCMBlitterLib/PCMBlitterLib.cpp; sourceTree = "<group>"; };
+		A570429225E55AE500A09773 /* PCMBlitterLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PCMBlitterLib.h; path = PCMBlitterLib/PCMBlitterLib.h; sourceTree = "<group>"; };
+		A570429325E55AE500A09773 /* private_xmmintrin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = private_xmmintrin.h; path = PCMBlitterLib/private_xmmintrin.h; sourceTree = "<group>"; };
 		A5E9E0D22247540800C1AF35 /* OSBase2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSBase2.h; sourceTree = "<group>"; };
 		D63C4CF00B20BFAE0047FE0F /* IOAudioFamily.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOAudioFamily.kext; sourceTree = BUILT_PRODUCTS_DIR; };
 		D63C4CFB0B20BFAE0047FE0F /* libIOAudioFloatLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libIOAudioFloatLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -270,11 +273,11 @@
 		3095886B126D4F9A0024DE0C /* BlitterLib */ = {
 			isa = PBXGroup;
 			children = (
-				3095886D126D4FC90024DE0C /* IOAudioBlitterLib.cpp */,
-				3095886E126D4FC90024DE0C /* IOAudioBlitterLib.h */,
-				30CE74C0126E5931006D705F /* IOAudioBlitterLibDispatch.cpp */,
-				30DA50431451D10A006CF664 /* IOAudioBlitterLibDispatch.h */,
-				30958872126D4FC90024DE0C /* IOAudioBlitterLibX86.cpp */,
+				A570429125E55AE500A09773 /* PCMBlitterLib.cpp */,
+				A570429225E55AE500A09773 /* PCMBlitterLib.h */,
+				A570428F25E55AE400A09773 /* PCMBlitterLibDispatch.h */,
+				A570429025E55AE400A09773 /* PCMBlitterLibX86.cpp */,
+				A570429325E55AE500A09773 /* private_xmmintrin.h */,
 			);
 			name = BlitterLib;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				D63C4CCD0B20BFAE0047FE0F /* IOAudioEngineUserClient.h in Headers */,
 				D63C4CCE0B20BFAE0047FE0F /* IOAudioLevelControl.h in Headers */,
 				A5E9E0D32247540800C1AF35 /* OSBase2.h in Headers */,
+				A570429C25E55AE500A09773 /* private_xmmintrin.h in Headers */,
 				D63C4CCF0B20BFAE0047FE0F /* IOAudioPort.h in Headers */,
 				D63C4CD00B20BFAE0047FE0F /* IOAudioStream.h in Headers */,
 				D63C4CD10B20BFAE0047FE0F /* IOAudioTypes.h in Headers */,
@@ -300,7 +304,8 @@
 				D63C4CD30B20BFAE0047FE0F /* IOAudioDefines.h in Headers */,
 				D63C4CD40B20BFAE0047FE0F /* IOAudioSelectorControl.h in Headers */,
 				D63C4CD50B20BFAE0047FE0F /* IOAudioToggleControl.h in Headers */,
-				30DA50441451D10A006CF664 /* IOAudioBlitterLibDispatch.h in Headers */,
+				A570429A25E55AE500A09773 /* PCMBlitterLib.h in Headers */,
+				A570429425E55AE500A09773 /* PCMBlitterLibDispatch.h in Headers */,
 				8BC08A871561C9C200CA98A1 /* BigNum128.h in Headers */,
 				8BC08A891561C9C200CA98A1 /* IOAudioTimeIntervalFilter.h in Headers */,
 			);
@@ -310,7 +315,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30958874126D4FC90024DE0C /* IOAudioBlitterLib.h in Headers */,
+				A570429D25E55AE500A09773 /* private_xmmintrin.h in Headers */,
+				A570429B25E55AE500A09773 /* PCMBlitterLib.h in Headers */,
+				A570429525E55AE500A09773 /* PCMBlitterLibDispatch.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,13 +405,14 @@
 			};
 			buildConfigurationList = 306FEE6E090FDD0A00D6B7FE /* Build configuration list for PBXProject "IOAudioFamily" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 1;
 			knownRegions = (
-				English,
-				Japanese,
-				French,
-				German,
+				en,
+				fr,
+				ja,
+				de,
+				Base,
 			);
 			mainGroup = 089C166AFE841209C02AAC07 /* IOAudioFamily */;
 			projectDirPath = "";
@@ -478,7 +486,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30D6E62E145A427B00DBD097 /* IOAudioBlitterLibDispatch.cpp in Sources */,
 				D63C4CD90B20BFAE0047FE0F /* IOAudioControl.cpp in Sources */,
 				D63C4CDA0B20BFAE0047FE0F /* IOAudioControlUserClient.cpp in Sources */,
 				D63C4CDB0B20BFAE0047FE0F /* IOAudioDevice.cpp in Sources */,
@@ -488,8 +495,10 @@
 				D63C4CDF0B20BFAE0047FE0F /* IOAudioPort.cpp in Sources */,
 				D63C4CE00B20BFAE0047FE0F /* IOAudioStream.cpp in Sources */,
 				D63C4CE10B20BFAE0047FE0F /* IOAudioSelectorControl.cpp in Sources */,
+				A570429825E55AE500A09773 /* PCMBlitterLib.cpp in Sources */,
 				D63C4CE20B20BFAE0047FE0F /* IOAudioToggleControl.cpp in Sources */,
 				8BC08A861561C9C200CA98A1 /* BigNum128.cpp in Sources */,
+				A570429625E55AE500A09773 /* PCMBlitterLibX86.cpp in Sources */,
 				8BC08A881561C9C200CA98A1 /* IOAudioTimeIntervalFilter.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,9 +507,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A570429725E55AE500A09773 /* PCMBlitterLibX86.cpp in Sources */,
 				D63C4CF40B20BFAE0047FE0F /* IOAudioEngineMixer.cpp in Sources */,
-				30958873126D4FC90024DE0C /* IOAudioBlitterLib.cpp in Sources */,
-				30958878126D4FC90024DE0C /* IOAudioBlitterLibX86.cpp in Sources */,
+				A570429925E55AE500A09773 /* PCMBlitterLib.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,7 +539,7 @@
 		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				089C167EFE841241C02AAC07 /* English */,
+				A537BA79247D67A800BA3079 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -560,6 +569,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -569,10 +579,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx.internal;
+				SDKROOT = macosx10.13;
 				SYMROOT = build;
-				VALID_ARCHS = "armv6 armv7 x86_64";
+				VALID_ARCHS = x86_64;
 			};
 			name = Development;
 		};
@@ -598,6 +609,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -606,8 +618,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				SDKROOT = macosx.internal;
-				VALID_ARCHS = "armv6 armv7 x86_64";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.13;
+				VALID_ARCHS = x86_64;
 			};
 			name = Deployment;
 		};
@@ -633,6 +647,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -641,14 +656,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				SDKROOT = macosx.internal;
-				VALID_ARCHS = "armv6 armv7 x86_64";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				SDKROOT = macosx10.13;
+				VALID_ARCHS = x86_64;
 			};
 			name = Default;
 		};
 		D63C4CEC0B20BFAE0047FE0F /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				AE_CONCISE_VERSION = 206.7;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_ENTITLEMENTS = "-";
 				CODE_SIGN_IDENTITY = "-";
@@ -663,7 +680,8 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = fast;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_USE_STANDARD_INCLUDE_SEARCHING = YES;
+				GCC_USE_STANDARD_INCLUDE_SEARCHING = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				GCC_WARN_SHADOW = YES;
 				HEADER_SEARCH_PATHS = "";
@@ -676,7 +694,7 @@
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/build/Development\"";
 				MODULE_IOKIT = YES;
 				MODULE_NAME = com.apple.iokit.IOAudioFamily;
-				MODULE_VERSION = 1.9.6fc5;
+				MODULE_VERSION = 1.9.6fc6;
 				OTHER_CFLAGS = (
 					"$(DEBUG_CFLAGS)",
 					"-DIOAUDIOFAMILY_SELF_BUILD",
@@ -686,7 +704,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.apple.iokit.IOAudioFamily;
 				PRODUCT_NAME = IOAudioFamily;
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.13;
 				SECTORDER_FLAGS = "";
 				UNSTRIPPED_PRODUCT = YES;
 				VALID_ARCHS = x86_64;
@@ -703,6 +721,7 @@
 		D63C4CED0B20BFAE0047FE0F /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				AE_CONCISE_VERSION = 206.7;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_ENTITLEMENTS = "-";
 				CODE_SIGN_IDENTITY = "-";
@@ -715,7 +734,8 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_OPTIMIZATION_LEVEL = fast;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_USE_STANDARD_INCLUDE_SEARCHING = YES;
+				GCC_USE_STANDARD_INCLUDE_SEARCHING = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				GCC_WARN_SHADOW = YES;
 				HEADER_SEARCH_PATHS = "";
@@ -724,21 +744,17 @@
 				INFOPLIST_PREPROCESS = YES;
 				KERNEL_MODULE = YES;
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/build/Deployment\"";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MODULE_IOKIT = YES;
 				MODULE_NAME = com.apple.iokit.IOAudioFamily;
-				MODULE_VERSION = 1.9.6fc5;
-				OTHER_CFLAGS = (
-					"$(DEBUG_CFLAGS)",
-					"-DIOAUDIOFAMILY_SELF_BUILD",
-					"-DKERNEL_PRIVATE",
-				);
+				MODULE_VERSION = 1.9.6fc6;
+				OTHER_CFLAGS = "-DIOAUDIOFAMILY_SELF_BUILD";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.apple.iokit.IOAudioFamily;
 				PRODUCT_NAME = IOAudioFamily;
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.13;
 				SECTORDER_FLAGS = "";
 				VALID_ARCHS = x86_64;
 				WARNING_CFLAGS = (
@@ -754,6 +770,7 @@
 		D63C4CEE0B20BFAE0047FE0F /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				AE_CONCISE_VERSION = 206.7;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_ENTITLEMENTS = "-";
 				CODE_SIGN_IDENTITY = "-";
@@ -765,7 +782,8 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_OPTIMIZATION_LEVEL = fast;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_USE_STANDARD_INCLUDE_SEARCHING = YES;
+				GCC_USE_STANDARD_INCLUDE_SEARCHING = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				GCC_WARN_SHADOW = YES;
 				HEADER_SEARCH_PATHS = "";
@@ -778,7 +796,7 @@
 				MACOSX_DEPLOYMENT_TARGET = "";
 				MODULE_IOKIT = YES;
 				MODULE_NAME = com.apple.iokit.IOAudioFamily;
-				MODULE_VERSION = 1.9.6fc5;
+				MODULE_VERSION = 1.9.6fc6;
 				OTHER_CFLAGS = (
 					"$(DEBUG_CFLAGS)",
 					"-DIOAUDIOFAMILY_SELF_BUILD",
@@ -788,7 +806,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.apple.iokit.IOAudioFamily;
 				PRODUCT_NAME = IOAudioFamily;
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.13;
 				SECTORDER_FLAGS = "";
 				VALID_ARCHS = x86_64;
 				WARNING_CFLAGS = (
@@ -849,7 +867,7 @@
 				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include;
 				REZ_EXECUTABLE = YES;
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.13;
 				SECTORDER_FLAGS = "";
 				SKIP_INSTALL = YES;
 				UNSTRIPPED_PRODUCT = YES;
@@ -909,7 +927,7 @@
 				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include;
 				REZ_EXECUTABLE = YES;
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.13;
 				SECTORDER_FLAGS = "";
 				SKIP_INSTALL = YES;
 				VALID_ARCHS = x86_64;
@@ -967,7 +985,7 @@
 				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include;
 				REZ_EXECUTABLE = YES;
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.13;
 				SECTORDER_FLAGS = "";
 				SKIP_INSTALL = YES;
 				VALID_ARCHS = x86_64;
@@ -996,7 +1014,7 @@
 				PRODUCT_NAME = audio;
 				PUBLIC_HEADERS_FOLDER_PATH = /System/Library/Frameworks/Kernel.framework/Versions/A/Headers/IOKit;
 				REZ_EXECUTABLE = YES;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.13;
 				SECTORDER_FLAGS = "";
 				UNSTRIPPED_PRODUCT = YES;
 				WARNING_CFLAGS = (
@@ -1022,7 +1040,7 @@
 				PRODUCT_NAME = audio;
 				PUBLIC_HEADERS_FOLDER_PATH = /System/Library/Frameworks/Kernel.framework/Versions/A/Headers/IOKit;
 				REZ_EXECUTABLE = YES;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.13;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -1048,7 +1066,7 @@
 				PRODUCT_NAME = audio;
 				PUBLIC_HEADERS_FOLDER_PATH = /System/Library/Frameworks/Kernel.framework/Versions/A/Headers/IOKit;
 				REZ_EXECUTABLE = YES;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.13;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
 					"-Wmost",

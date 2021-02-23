@@ -24,6 +24,7 @@
 #define _IOKIT_IOAUDIOSTREAM_H
 
 #include <IOKit/IOService.h>
+//#include "IOService.h"
 #include <AvailabilityMacros.h>
 
 #ifndef IOAUDIOFAMILY_SELF_BUILD

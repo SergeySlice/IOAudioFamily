@@ -68,6 +68,22 @@ OSMetaClassDefineReservedUnused(IOAudioPort, 28);
 OSMetaClassDefineReservedUnused(IOAudioPort, 29);
 OSMetaClassDefineReservedUnused(IOAudioPort, 30);
 OSMetaClassDefineReservedUnused(IOAudioPort, 31);
+OSMetaClassDefineReservedUnused(IOAudioPort, 32);
+OSMetaClassDefineReservedUnused(IOAudioPort, 33);
+OSMetaClassDefineReservedUnused(IOAudioPort, 34);
+OSMetaClassDefineReservedUnused(IOAudioPort, 35);
+OSMetaClassDefineReservedUnused(IOAudioPort, 36);
+OSMetaClassDefineReservedUnused(IOAudioPort, 37);
+OSMetaClassDefineReservedUnused(IOAudioPort, 38);
+OSMetaClassDefineReservedUnused(IOAudioPort, 39);
+OSMetaClassDefineReservedUnused(IOAudioPort, 40);
+OSMetaClassDefineReservedUnused(IOAudioPort, 41);
+OSMetaClassDefineReservedUnused(IOAudioPort, 42);
+OSMetaClassDefineReservedUnused(IOAudioPort, 43);
+OSMetaClassDefineReservedUnused(IOAudioPort, 44);
+OSMetaClassDefineReservedUnused(IOAudioPort, 45);
+OSMetaClassDefineReservedUnused(IOAudioPort, 46);
+OSMetaClassDefineReservedUnused(IOAudioPort, 47);
 
 IOAudioPort *IOAudioPort::withAttributes(UInt32 portType, const char *portName, UInt32 subType, OSDictionary *properties)
 {

@@ -28,6 +28,7 @@
 #define _IOKIT_IOAUDIOENGINE_H
 
 #include <IOKit/IOService.h>
+//#include "IOService.h"
 #include <AvailabilityMacros.h>
 
 #ifndef IOAUDIOFAMILY_SELF_BUILD

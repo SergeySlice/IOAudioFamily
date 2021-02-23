@@ -24,6 +24,7 @@
 #define _IOKIT_IOAUDIOPORT_H
 
 #include <IOKit/IOService.h>
+//#include "IOService.h"
 #include <AvailabilityMacros.h>
 
 class IOAudioDevice;
@@ -92,6 +93,22 @@ private:
     OSMetaClassDeclareReservedUnused(IOAudioPort, 29);
     OSMetaClassDeclareReservedUnused(IOAudioPort, 30);
     OSMetaClassDeclareReservedUnused(IOAudioPort, 31);
+    OSMetaClassDeclareReservedUnused(IOAudioPort, 32);
+    OSMetaClassDeclareReservedUnused(IOAudioPort, 33);
+    OSMetaClassDeclareReservedUnused(IOAudioPort, 34);
+    OSMetaClassDeclareReservedUnused(IOAudioPort, 35);
+    OSMetaClassDeclareReservedUnused(IOAudioPort, 36);
+    OSMetaClassDeclareReservedUnused(IOAudioPort, 37);
+    OSMetaClassDeclareReservedUnused(IOAudioPort, 38);
+    OSMetaClassDeclareReservedUnused(IOAudioPort, 39);
+    OSMetaClassDeclareReservedUnused(IOAudioPort, 40);
+    OSMetaClassDeclareReservedUnused(IOAudioPort, 41);
+    OSMetaClassDeclareReservedUnused(IOAudioPort, 42);
+    OSMetaClassDeclareReservedUnused(IOAudioPort, 43);
+    OSMetaClassDeclareReservedUnused(IOAudioPort, 44);
+    OSMetaClassDeclareReservedUnused(IOAudioPort, 45);
+    OSMetaClassDeclareReservedUnused(IOAudioPort, 46);
+    OSMetaClassDeclareReservedUnused(IOAudioPort, 47);
 
 public:
     /*!

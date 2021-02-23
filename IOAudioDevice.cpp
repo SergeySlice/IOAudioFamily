@@ -105,6 +105,22 @@ OSMetaClassDefineReservedUnused(IOAudioDevice, 28);
 OSMetaClassDefineReservedUnused(IOAudioDevice, 29);
 OSMetaClassDefineReservedUnused(IOAudioDevice, 30);
 OSMetaClassDefineReservedUnused(IOAudioDevice, 31);
+OSMetaClassDefineReservedUnused(IOAudioDevice, 32);
+OSMetaClassDefineReservedUnused(IOAudioDevice, 33);
+OSMetaClassDefineReservedUnused(IOAudioDevice, 34);
+OSMetaClassDefineReservedUnused(IOAudioDevice, 35);
+OSMetaClassDefineReservedUnused(IOAudioDevice, 36);
+OSMetaClassDefineReservedUnused(IOAudioDevice, 37);
+OSMetaClassDefineReservedUnused(IOAudioDevice, 38);
+OSMetaClassDefineReservedUnused(IOAudioDevice, 39);
+OSMetaClassDefineReservedUnused(IOAudioDevice, 40);
+OSMetaClassDefineReservedUnused(IOAudioDevice, 41);
+OSMetaClassDefineReservedUnused(IOAudioDevice, 42);
+OSMetaClassDefineReservedUnused(IOAudioDevice, 43);
+OSMetaClassDefineReservedUnused(IOAudioDevice, 44);
+OSMetaClassDefineReservedUnused(IOAudioDevice, 45);
+OSMetaClassDefineReservedUnused(IOAudioDevice, 46);
+OSMetaClassDefineReservedUnused(IOAudioDevice, 47);
 
 
 void IOAudioDevice::setDeviceModelName(const char *modelName)
